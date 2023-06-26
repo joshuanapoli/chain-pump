@@ -1,7 +1,7 @@
 use <lib/pump_4547.scad>
 
 clearance=0.5;
-body_thickness=1;
+body_thickness=2;
 body_length=10;
 foot_width=pump_4547_foot_width()+2*body_thickness;
 foot_height=pump_4547_pump_diameter()/2+body_thickness;

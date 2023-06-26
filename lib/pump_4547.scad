@@ -1,5 +1,5 @@
 function pump_4547_pump_diameter() = 22.71;
-function pump_4547_foot_width() = 20;
+function pump_4547_foot_width() = 21;
 
 // Submersible 3V DC Water Pump - 1 Meter Vertical Type, Adafruit 4547
 // https://www.adafruit.com/product/4547
