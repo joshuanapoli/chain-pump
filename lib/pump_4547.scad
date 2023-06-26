@@ -51,7 +51,16 @@ module pump_4547() {
         // motor
         translate([0,0,-motor_length]) {
             cylinder(h=motor_length, d=motor_diameter);
-            linear_extrude(motor_length) polygon([[-pump_4547_foot_width()/2,motor_diameter/2],[0,0],[pump_4547_foot_width()/2,motor_diameter/2]]);
+            linear_extrude(motor_length) polygon([
+            [-pump_4547_foot_width()/2+2,motor_diameter/2],
+            [-pump_4547_foot_width()/2+1,motor_diameter/2+0.5],
+            [-pump_4547_foot_width()/2,motor_diameter/2+0.5],
+            [-pump_4547_foot_width()/2,motor_diameter/2],
+            [0,0],
+            [pump_4547_foot_width()/2,motor_diameter/2],
+            [pump_4547_foot_width()/2,motor_diameter/2+0.5],
+            [pump_4547_foot_width()/2-1,motor_diameter/2+0.5],        [pump_4547_foot_width()/2-2,motor_diameter/2]
+            ]);
         }
 
         // end
